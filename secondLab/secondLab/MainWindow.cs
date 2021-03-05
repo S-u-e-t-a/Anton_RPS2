@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace secondLab
@@ -96,6 +97,16 @@ namespace secondLab
                 return; // обработка закрытия окна сохранения результатов
             var filenameSaveRes = saveFileDialog.FileName; // получение имени файла 
             saving.SaveResults(filenameSaveRes, textBoxInput.Text, textBoxResult.Text); // сохранение результатов
+        }
+
+        private void InfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var infoWindow = new About();
+            if (!Application.OpenForms.OfType<About>().Any())
+            {
+                infoWindow.Show();
+                infoWindow.Focus();
+            }
         }
     }
 }

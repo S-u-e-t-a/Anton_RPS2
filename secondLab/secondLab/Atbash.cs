@@ -41,7 +41,7 @@ namespace secondLab
                 if (char.IsLetter(lettersText[i]))
                 {
                     var isLowerCase = char.IsLower(lettersText[i]);
-                    lettersText[i] = Convert.ToChar(lettersText[i].ToString().ToLower());
+                    lettersText[i] = char.ToLower(lettersText[i]);
                     if (IsLatin(lettersText[i]))
                         if (isLowerCase)
                         {
@@ -82,7 +82,7 @@ namespace secondLab
                 if (char.IsLetter(lettersText[i]))
                 {
                     var isLowerCase = char.IsLower(lettersText[i]);
-                    lettersText[i] = Convert.ToChar(lettersText[i].ToString().ToLower());
+                    lettersText[i] = char.ToLower(lettersText[i]);
                     if (IsLatin(lettersText[i]))
                         if (isLowerCase)
                         {

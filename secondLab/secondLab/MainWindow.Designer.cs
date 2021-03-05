@@ -99,6 +99,7 @@
             this.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem";
             this.InfoToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.InfoToolStripMenuItem.Text = "Справка";
+            this.InfoToolStripMenuItem.Click += new System.EventHandler(this.InfoToolStripMenuItem_Click);
             // 
             // groupBoxInput
             // 
