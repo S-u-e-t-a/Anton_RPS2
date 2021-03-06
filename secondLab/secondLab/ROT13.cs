@@ -1,6 +1,6 @@
 ﻿namespace secondLab
 {
-    class Rot13
+    class Rot13 : ICipher
     {
         private const string AlphabetEng = @"abcdefghijklmnopqrstuvwxyz";
         private const string AlphabetRus = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
@@ -27,7 +27,6 @@
 
             return string.Join("", letters);
         }
-
 
         public string Decode(string text)
         {

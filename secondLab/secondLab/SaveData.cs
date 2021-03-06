@@ -16,9 +16,9 @@ namespace secondLab
         public void SaveResults(string path, string text, string result)
         {
             File.WriteAllText(path, string.Empty);
-            File.AppendAllText(path, @"Вы ввели следующий текст: " + text + Environment.NewLine);
+            File.AppendAllText(path, @"Вы ввели следующий текст: " + Environment.NewLine + text + Environment.NewLine);
             File.AppendAllText(path,
-                @"Результат шифрования/дешифрования " + result +
+                @"Результат шифрования/дешифрования " + Environment.NewLine + result +
                 Environment.NewLine);
             MessageBox.Show(@"Результаты сохранены",
                 @"Информация");
